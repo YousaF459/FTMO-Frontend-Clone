@@ -788,38 +788,38 @@ function ftmolastcarouselwidthupdated(){
 
     if(width <= 995 && width >= 767.98) {
       ftmolastcarouselcontainer.style.width = '320px';
-      console.log("container",ftmolastcarouselcontainer.style.width)
+     
       ftmolastcarouselcontent.forEach((element) => {
         const computedWidth = window.getComputedStyle(element).width;
-        console.log("content", computedWidth)
+        
         element.style.width = computedWidth;
       });
 
     }
     else if (width < 1196 && width > 995 && width>= 767.98) {
       ftmolastcarouselcontainer.style.width = '600px';
-      console.log("container",ftmolastcarouselcontainer.style.width)
+     
       ftmolastcarouselcontent.forEach((element) => {
         const computedWidth = window.getComputedStyle(element).width;
-        console.log("content", computedWidth)
+      
         element.style.width ="300px";
       });
     }
     else if (width < 1380 && width >= 1196 && width>= 767.98) {
       ftmolastcarouselcontainer.style.width = '800px';
-      console.log("content",ftmolastcarouselcontainer.style.width)
+     
       ftmolastcarouselcontent.forEach((element) => {
         const computedWidth = window.getComputedStyle(element).width;
-        console.log("container", computedWidth)
+     
         element.style.width = "270px";
       });
     }
     else if(width > 1380){
       ftmolastcarouselcontainer.style.width = '990px';
-      console.log("container",ftmolastcarouselcontainer.style.width)
+      
       ftmolastcarouselcontent.forEach((element) => {
         const computedWidth = window.getComputedStyle(element).width;
-        console.log("content", computedWidth)
+        
         element.style.width = "245px";
       });
     }
