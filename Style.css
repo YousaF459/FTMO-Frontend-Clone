@@ -1,0 +1,3791 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Overpass:wght@400;700&family=Poppins&family=Roboto:wght@400;700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+* {
+    margin: 0;
+    padding:0;
+}
+
+/* error  */
+
+/* width 272px */
+
+/* error  */
+
+
+/* Navbar CSS  */
+
+
+
+
+#firstpagediv{
+    background-color:#252627;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    }
+
+:root {
+    --duration:.2s;
+    --number-width: 25%;
+  }
+ 
+#navftmologo{
+    width:250px;
+    height:100px;
+    align-self: flex-end;
+}
+#navftmologo:hover{
+    cursor: pointer;
+}
+#navsearchlogo{
+    width:20px;
+    margin-top: 8px;
+    opacity:.6;
+    transition-property: opacity;
+}
+#navsearchlogo:hover{
+    opacity:1;
+}
+
+main,
+.navul,
+nav
+{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+
+    grid-template-columns: 0.36fr 1fr 0.1fr;
+    background-color: black;
+}
+nav{
+    justify-self: flex-start;
+}
+
+#navftmologo{
+    margin-top: 10px;
+    justify-self: flex-end;
+}
+.navul{
+    list-style: none;
+    gap: 45px;  
+}
+.navul li{
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.arrow{
+    margin-left: 6px;
+    width:15px;
+    vertical-align: middle;
+    opacity: .5;
+    transition-property: opacity;
+}
+#countryflag{
+    border-radius: 50%;
+    height: 20px;
+    width:20px;
+    margin-right: 8px;
+    vertical-align:sub;
+}
+#hamburger{
+    margin-right:15px;
+    display: none;
+    visibility: hidden;
+    opacity: .5;
+}
+#client{
+    color:#0781fe;
+} 
+
+.navli:hover{
+    color:#0781fe;
+    cursor: pointer;
+}
+.navli{
+    transition-property: color;
+}
+
+#flagsflex{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+#aboutus,
+#tradingnav,
+#howitworks,
+#language{
+    width:250px;
+    list-style: none;
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: black; 
+    visibility: hidden;
+    transform: translateX(-2rem);
+    transition-property: transform;
+    border-radius: 15px;
+}
+#language{
+    width:170px;
+}
+
+#aboutus li,
+#howitworks li,
+#tradingnav li,
+#language li{
+    font-size: 14px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition-property: background-color, border-right;
+}
+
+
+.navul li:nth-child(5):hover #aboutus,
+.navul li:nth-child(8):hover #language,
+.navul li:nth-child(4):hover #tradingnav,
+.navul li:nth-child(1):hover #howitworks{
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+.navul li:nth-child(1):hover .arrow,
+.navul li:nth-child(4):hover .arrow,
+.navul li:nth-child(5):hover .arrow,
+.navul li:nth-child(8):hover .arrow{
+    opacity: .9;
+}
+
+
+#aboutus:hover{
+    visibility: visible;
+}
+.countryflagsid{
+    border-radius: 50%;
+    height: 20px;
+    width:20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+#aboutus li:hover,
+#tradingnav li:hover,
+#howitworks li:hover,
+#language li:hover{
+    background-color:#393a3b;
+    border-right: 4px solid #0781fe;
+}
+
+#hamburger:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#specialarrow{
+    height: 22px;
+    width: 16px;
+}
+
+
+#searchimg{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+#searchholder{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    font-size: 1rem;
+}
+
+#searchtext{
+    width: 270px;
+    background-color: black;
+    position: fixed;
+    padding: 10px;
+    padding-top:20px ;
+    transform: translateX(-90%);
+    display: none;
+}
+
+#firstpagediv{
+    position: sticky;
+    background-color: red;
+    height: auto;
+
+}
+#navbar{
+    display: block;
+}
+
+/* Navbar CSS  */
+
+#firstpagecontainer{
+    height: 850px;
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    background-color: #252627;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#containright{
+    display: grid;
+    place-content: center;
+    max-width: 650px;
+    min-width: 620px;
+}
+
+
+#firstpageleft{
+    padding-top: 30px;
+}
+#firstpageright{
+    width: 100%;
+}
+#firstpageleft{
+    max-width: 650px;
+    min-width: 450px;
+}
+
+
+
+#firstpageleft{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    
+}
+.samestar{
+    vertical-align: middle;
+}
+#firstpageleftstars{
+    display: flex;
+    gap: 4px;
+}
+#firstpagelefttrust,
+#firstpagelefttrustscore{
+    color: white;
+}
+#firstpageleftstartrust{
+    display: flex;
+    align-items: center;
+}
+#firstpagelefth{
+    color: #0781fe;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    top: 30px;}
+
+#firstpageleftsh{color: #fff;
+    padding-top: 20px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+#firstpageleftp{
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#firstpagelefttrust{
+    font-size: 20px;
+}
+#firstpagelefttrustscore{
+    font-size: 16px;
+}
+#firstpageleftbtns{
+    display: flex;
+    gap: 20px;
+}
+#firstpageleftbtnsr,
+#firstpageleftbtnsl{
+    padding: 12px;
+    border-radius:8px ;
+    width: 190px;
+    color: white;
+    font-size: 1rem;
+    font-weight:bold;
+}
+#firstpageleftbtnsl{
+    background-color: #0781fe;
+    transition-property:  background-color;
+}
+#firstpageleftbtnsr{
+    background-color: #252627;
+    border: 1px solid white;
+    transition-property:  background-color,color;
+}
+
+#firstpageright{
+    background-image: url("./Images/hero_mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+#firstpagerightplay{
+    width:90px;
+    height: 90px;
+    transform: translateX(-30px);
+    padding-top: 25;
+    border-radius: 50%;
+}
+
+#firstpageleftbtnsr,
+#firstpageleftbtnsl,
+#firstpageleftstars:hover,
+#firstpageleftstartrust:hover,
+#firstpagelefttrustscore:hover,
+#firstpagerightplay:hover{
+    cursor: pointer;
+}
+
+
+
+#firstpageleftbtnsl:hover{
+    background-color: hsl(217, 100%, 70%);
+}
+
+#firstpageleftbtnsr:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Home Carousel */
+
+#homecarousel{
+    width: 100%;
+    height: 188px;
+    background-color: #2c2c2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carouselfirst{
+    display: flex;
+    max-width: 1770px;
+    gap: 100px;
+}
+.carouselfirstp{
+    font-size: 14px;
+    color: white;
+    vertical-align: center;
+}
+
+.carouselfirsth{
+    font-size: 50px;
+    color: #0781fe;
+    vertical-align: center;
+}
+
+.carouselcontainers{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+   max-width: 260px;
+   min-width: 100px;
+   height: auto;
+   text-align: center;
+}
+#homecarouselnav,
+.homecarouselarrowright,
+    .homecarouselarrowleft{
+    display: none;
+    }
+
+/* Home Carousel Ends*/
+
+
+/* home video */
+#videodiv{
+    display: none;
+    position: absolute;
+    top: 90px;
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding-top: 4%;
+    padding-bottom: 7%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#videocrosshome{
+    width: 20px;
+    float: right;
+    padding-bottom: 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+#videocrosshome:hover{
+    opacity: 2;
+}
+
+#videofig{
+    
+        width:100%;
+        height: calc(max(100px, min(800px, 60vw)));
+      margin-right: 0px;
+      padding-bottom: 105px;
+}
+#videofirst{
+    width: 100%;
+    height:100%;
+}
+#figvideo{
+    display: none;
+}
+/* home video */
+
+/* sECOND pAGE */
+
+#secondmain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#secondcontainer{
+    display: flex;
+    gap: 80px;
+    width: 1320px;
+    height: 540px;
+    padding: 75px 0;
+    justify-content: center;
+}
+#secondright{
+    width: 518.39px;
+    height: 100%;
+}
+#secondleft{
+    display: flex;
+    gap: 10px;
+    width: 560px;
+}
+#secondright h1{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+#secondrightp1,
+#secondrightp2{
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #555b6c!important;
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+}
+.secondleftimg img{
+    height: 390px;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+#secondrightp1 strong{
+    color: #0781fe!important;
+    font-weight: 700!important;
+}
+
+
+#secondrightp2 strong{
+    text-decoration:underline;
+    text-decoration-style: dotted;
+}
+#secondpagerightstrong{
+    color: #0781fe!important;
+    font-weight: 700!important;
+
+}
+
+/* sECOND pAGE */
+
+
+
+/*Evaluation Process Section*/
+
+#evaluationdiv{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+#evaluationmainheading{
+    text-align: center;
+    color: #0781fe!important;
+    font-size: 40px!important;
+    line-height: 50px!important;
+    letter-spacing: 2px!important;
+    margin-bottom:30px;
+    margin-top: 30px ;
+}
+#evaluationsection{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 0.5fr;
+    width: 1296px;
+    height: auto;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 75px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+#leftevaluationdiv{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    height: auto;
+}
+#evaluatebarp{
+    text-align: center;
+    transform: translateX(55px);
+    color: #0781fe!important;
+}
+#evaluatebar{
+    transform: translateX(240px);
+}
+#rightevaluationp{
+    font-size: 20px;
+    font-family: Poppins,sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    padding-bottom: 1px;
+    color: #00c7b4;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: help!important;
+    transform: translateY(20px);
+}
+#rightevaluationdiv{
+    width: 100%;
+    border: 2px solid #00c7b4;
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    height: auto;
+    transform: translateY(25px);
+    height: auto;
+}
+.evaluationcontentdivs{
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    height: 320px!important;
+    background-color: #fff;
+}
+.evaluationboxheadings{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    color: #c6c6c6;}
+.evaluationboxheadingssnew,
+.evaluationboxheadingss{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #262729;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.evaluationboxp{
+    color: #555b6c;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .7px;
+    max-height: 220px;
+}
+#evaluationboxheadingsright{
+    color: #00c7b4;
+}
+
+
+
+/*Evaluation Process Section*/
+
+
+
+/*Trading Objectives Section*/
+#tradingobjectivessection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+#tradingobjectivescontainer{
+    height: auto;
+    max-width: 1296px;
+    padding-top: 75px ;
+    padding-bottom: 25px;
+    border-top: 1px solid black;
+    justify-self: center;
+}
+#tradingobjectivesintro h1{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 20px;
+    font-family: Poppins,sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+}
+#tradingobjectivesintro p{
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+#balancelist,
+#currencylist{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#balancelist li,
+#currencylist li{
+    display: flex; 
+    background-color: white;  
+    border-radius: 15px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 130px;
+}
+#currencylist li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.currecybalanceh{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+#balanceulbuttondiv{
+    display: flex;
+    justify-content: space-between;
+}
+#balancecomparebutton{
+    width: 300px !important;
+    background-color: #0781fe;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-color: #0781fe;
+    letter-spacing: 1px;
+}
+#balancelist li{
+    color: #00c7b4;
+}
+/*Trading Objectives Section*/
+
+/*Table Section*/
+
+#tablecontainer{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    border: 2px solid  #f5f2f2;
+    justify-self: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.tablearrows{
+    width: 18px;
+    height: 18px;
+}
+.tablerowleft{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+    padding-right: 15px;
+    
+}
+
+
+
+.tablerowsclass{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #f4f4f4;
+    height: 85px;
+    
+}
+.tablerowsclass h2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    font-weight: 500;
+}
+.tablerowonedivs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self:center;
+}
+#rowone{
+    border-top: none;
+}
+#tablerowonedivsone{
+    grid-column-start: 2;
+}
+#tablerowonedivstwo{
+    grid-column-start: 3;
+}
+#tablerowonedivsthree{
+    grid-column-start: 4;
+}
+.tablerowleft p{
+    text-align: left;
+}
+.tablerowleft,
+.tablerowonedivs{
+    color: #0781fe;
+    font-weight: 600;
+    font-size: 14px;
+}
+.tabletextgreen{
+    color: #00c7b4;
+}
+.tablejsarrows{
+    display: none;
+}
+h2.colone,
+h2.colthree{
+    background-color:#f8f8f9;;
+}
+/*Table Section*/
+
+
+
+/*Compare Table Section*/
+
+#comparetablecontainer{
+    max-width: 1296px;
+    display: none;
+}
+
+
+#comparetable{
+    display: grid;
+    background-color: white;
+    border-radius: 25px;
+    
+    border: 2px solid  #f5f2f2;
+    max-width: 100%;
+    min-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.comparetablerows{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-top:1px solid #f4f4f4;
+    height: 84px;
+    align-items: center;
+}
+.comparetabledefrow{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: #0781fe;
+    font-weight: 600;
+    font-size: 14px;
+}
+p.comparetabledef{
+    padding-left: 15px;
+    color: #0781fe;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.comparetablelastrow{
+    color:#00c7b4;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+ 
+}
+.comparetablecolone,
+.comparetablecoltwo,
+.comparetablecolthree,
+.comparetablecolfour,
+.comparetablecolfive{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Compare  Table Section*/
+
+
+
+/*Key Highlights Section*/
+
+#keyhighlightssection{
+    width:100%;
+    background-color: #f4f4f4;
+    display: grid;
+    justify-content: center;
+    height: auto;
+}
+#keyhighlightscontainer{
+    padding-top: 30px;
+    margin-bottom: 35px;
+    width: 1296px;
+    height: auto;
+}
+#keyhighlightsmainh1{
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+.keyhighlightsimgh{
+    display: flex;
+    gap: 15px;
+    color: #262729!important;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#keyhighlights{
+    padding-top: 35px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    height: auto;
+}
+.keyhighlightsdivs{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    
+}
+.keyhighlightsdivs p{
+    font-size: 14px;
+    color: #555b6c!important;
+    margin-bottom: 1rem;
+    letter-spacing: .05em;
+    line-height: 1.5rem;
+    height: auto;
+}
+
+
+/*Key Highlights Section*/
+
+
+
+/*Team Success Section*/
+
+
+#teamsuccesssection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+#teamsuccesscontainer{
+    padding-top: 70px;
+    background-image: url(./Images/dottedlineimg.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:center center;
+    display: grid;
+    justify-content: center;
+    height:auto;
+}
+#teamsuccess{
+    height: 100%;
+    width: 900px;
+    padding:120px 60px
+}
+.teamsucesselement{
+    text-align: center;
+}
+
+#teamsuccess h1{
+    font-size: 2.5rem;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    letter-spacing: .05em;
+    text-align: center;
+    text-transform: none;
+    margin: 20px 0;
+    color: #262729;
+    font-size: 40px;
+}
+#teamsuccess p{
+    padding: 0 80px;
+    font-size: 15px;
+    font-family:" Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    line-height: normal;
+    margin: 30px 0;
+    margin-bottom: 30px;
+    color: #555b6c;
+}
+#teamsuccessbutton{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.teamsuccessbuttonss{
+   padding: 15px;
+   padding-right: 45px;
+   padding-left: 45px;
+   border-radius: 8px;
+   margin-bottom: 15px;
+   border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0781FE;
+   
+}
+#teamsuccessbuttonwhite{
+    color: black;
+    background-color: #eaeaea;
+    opacity: 1;
+    border-color: #eaeaea!important;
+    transition-property: opacity;
+}
+#teamsuccessbuttonblue{
+    opacity: 1;
+    transition-property: opacity;
+}
+#teamsuccessbuttonblue:hover,
+#teamsuccessbuttonwhite:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+
+/*Team Success Section*/
+
+
+
+
+/*Payout  Section*/
+
+#payoutsection{
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+#payoutcontainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0;
+    padding-top:70px ;
+    width: 1296px;
+    height: auto;
+}
+#payoutright h1{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 20px;
+    text-transform: none;
+}
+#payoutright p{
+    line-height: 24px;
+    color: #555b6c!important;
+    margin-bottom: 20px;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+#payoutright p span{
+    color: #0781fe!important;
+    font-weight: 700!important;
+}
+#payoutleft{
+    width: 560px;
+}
+#payoutleft img{
+    width: 100%;
+    height: 100%;
+}
+#payoutright{
+    width:518px
+}
+
+
+/*Payout  Section*/
+
+
+
+/*Platforms  Section*/
+
+#tradingplatformsections{
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    display: grid;
+    justify-content: center;
+}
+#tradingplatformcontainer{
+    display: flex;
+    width: 1296px;
+    padding: 35px 0px;
+    justify-content: space-around;
+}
+#platformright img{
+    width: 100%;
+}
+#platformright{
+    display: grid;
+    align-items: center;
+    width: 560px;
+}
+#platformleft{
+    width: 518px;
+}
+#platformleft h1{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+}
+#platformleft p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555b6c!important;
+}
+
+#platformleftdiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+#platformleftdiv img{
+    width: 213px;
+}
+
+
+
+
+/*Platforms  Section*/
+
+
+
+
+
+/*FTMO Props  Section*/
+
+
+
+#ftmopropsection{
+height: auto;
+width: 100%;
+display: grid;
+justify-items: center;
+}
+#ftmopropcontainer{
+    padding-top: 80px;
+    width: 1296px;
+    border-bottom: 2px solid #c6c6c6;
+    margin-bottom: 30px;
+}
+#ftmoproplist{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+    color: #c6c6c6;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+#ftmopropupperh1{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+#ftmopropupperp{
+    color: #555b6c;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#ftmoproplist li{
+    cursor: pointer;
+    width: 142px;
+}
+#ftmoproplist li h1{
+    font-size: 20px;
+}
+#ftmoproplist li p{
+    font-size: 14px;
+}
+
+
+/*FTMO Props  Section*/
+
+
+/* Propfirm  Section*/
+
+#propfirmsection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    overflow: hidden;
+}
+#propfirmcontainer{
+    display: grid;
+    grid-auto-flow: column;
+    width: 1296px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.propfirmscarousel{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.80s ease;
+}
+.propfirmimgcontainer{
+    width: 560px;
+    margin-right: 30px;
+}
+.propfirmshpb{
+    width: 518px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.propfirmimg{
+   width: 100%;
+   border-radius: 15px;
+
+}
+
+.propfirmh{
+    color: #0781fe;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.propfirmp{
+    color: #262729;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.propfirmsp{
+    color: #555b6c;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.propfirmsb{
+    padding: 12px 70px;
+    background-color: #0781FE;
+    width: fit-content;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition-property: opacity;
+    cursor: pointer;
+}
+.propfirmsb:hover{
+    opacity: 0.8;
+
+}
+
+
+
+
+/* Propfirm  Section*/
+
+/* Trading Industry  Section*/
+
+#tradingindustrysection{
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    display: grid;
+    justify-items: center;
+}
+#tradingindustrycontainer{
+    padding-top: 80px;
+    width: 1296px;
+    padding-bottom: 80px;
+}
+#tradingindustryheading{
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #c6c6c6;
+}
+#tradingindustryheading span{
+    color: #0781fe;
+}
+#tradingindustrygrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tradingindustrygriddivs{
+    width: 388.8px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+}
+.tradingindustrygridparts{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+   
+}
+.tradingindustrygridparts h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.tradingindustrygriddivs p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.10px;
+    color: #535456;
+}
+
+
+/* Trading Industry  Section*/
+
+/* FTMO Last Section*/
+
+#ftmolastsection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+}
+
+#ftmolastcontainer{
+    padding-top: 80px;
+    width: 1296px;
+    padding-bottom: 80px;
+}
+#ftmolastmainp{
+    text-align: center;
+    padding-bottom: 40px!important;
+    color: #262729;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+#lastoneimgp{
+    display: flex;
+    align-items: center;
+}
+#ftmolastleft{
+    width: 200px;
+}
+#ftmolastleft img{
+    width: 35px;
+}
+
+
+#ftmolastleftFIRSTP{
+    color: #191919;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+}
+#ftmolastleftmiddleP{
+    background-color: #c6c6c6;
+}
+#ftmolastleftlastP{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#ftmolastflex{
+    display: flex;
+}
+
+#ftmolastcarousel{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    
+    margin-left: 10px;
+    
+}
+#ftmolastleftarrow{
+    align-self: center;
+    cursor: pointer;
+}
+
+#ftmolastrightarrow{
+ transform: rotate(180deg); 
+ grid-column: 3;
+ align-self: center;
+ cursor: pointer;
+}
+
+#lastmaincarouselftmo{
+    width: 980px;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    
+}
+
+
+.carouselcontentftmolast{
+    width: 242.75px;
+    height: 110px;
+    padding-left: 10px;
+    transition: transform 0.70s ease-in-out;
+}
+
+
+.lastftmoverified{
+    display: grid;
+    grid-auto-flow: column;
+    width: 180px;
+    align-items: center;
+}
+.carouselstarsftmolast{
+    width: 85px;
+    height: 30px;
+}
+.imgverified{
+    width: 75px;
+    height: 20px;
+ 
+}
+.ftmolastcontentp{
+    font-size: 14px;
+    font-weight: 700;
+    height: 16px;
+    margin: 0 0 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.ftmolastcontentsp{
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 8px;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.ftmolastcontenttp{
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+.newarrowftmolast{
+    display: none;
+}
+
+#lastftomradiobuttons{
+   display: none;
+}
+
+
+
+/* FTMO Last Section*/
+
+
+
+
+/* FTMO Footer Section*/
+
+#ftmofootersection{
+    width: 100%;
+    height: auto;
+background: linear-gradient(97deg,#0781fe 0,#6972ea 100%)!important;
+display: grid;
+justify-items: center;
+justify-content: center;
+
+}
+
+#ftmofootercontainer{
+    width: 1296px;
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#footerimg{
+    width: 200px;
+    height: 100px;
+}
+#footerimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.footerp{
+    margin-bottom: 0;
+    line-height: 1;
+    color: #fff!important;
+    font-size: 60px;
+    text-align: center;
+}
+#footerbuttonsdiv{
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 25px;
+}
+
+.ftmofooterbutton{
+    color: #fff!important;
+    padding:12px 70px;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+#ftmoffoterbuttonleft{
+    background-color: #1e1e1e;
+    opacity: 1;
+    transition-property: opacity;
+}
+#ftmoffoterbuttonright{
+    background-color: transparent!important;
+    border: 2px solid white;
+}
+#ftmoffoterbuttonleft:hover{
+    opacity: 0.8;
+}
+
+
+/* FTMO Footer Section*/
+
+/* FTMO Footer Last Section*/
+
+
+
+#ftmolastfootersection{
+    width: 100%;
+    height: auto;
+    background-color: #1e1e1e;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#ftmolastfootercontainer{   
+    padding-top: 80px;
+    width: auto;
+    padding-bottom: 60px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+#ftmofooterlastlists{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1296px;
+    gap: 10px;
+}
+.lastfooterlists p{
+    color:#a2acbd;
+}
+#mutipleftmologolist p{
+    color:white;
+    transition-property: color;
+}
+
+#mutipleftmologolist{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 13px;
+    
+}
+#socialmediafooter{
+    display: flex;
+    gap: 10px;
+}
+
+#socialmediafooter img{
+    cursor: pointer;
+}
+
+
+
+#headingfooterlists1,
+#headingfooterlists2,
+#headingfooterlists3{
+
+    color:white;
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+
+.ftmoAppsfooterlist,
+.ftmoTradingfooterlist,
+.ftmoaboutusfooterlist{
+
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+   transition-property: color;
+}
+
+#mutipleftmologolist p,
+.ftmologofooterlist p,
+.ftmoAppsfooterlist p,
+.ftmoTradingfooterlist p,
+.ftmoaboutusfooterlist p{
+    transition-property: color;
+}
+
+
+#mutipleftmologolist p:hover,
+.ftmologofooterlist p:hover,
+.ftmoAppsfooterlist p:hover,
+.ftmoTradingfooterlist p:hover,
+.ftmoaboutusfooterlist p:hover{
+    cursor: pointer;
+    color: #0781FE;
+
+}
+
+
+
+
+#ftmofooterlaststore{
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    width: 100%;
+  
+}
+
+#ftmofooterlaststore img{
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+}
+
+
+
+
+
+/* FTMO Footer Last Section*/
+
+
+.ftmoAppsfooterlist,
+.ftmoTradingfooterlist,
+.ftmoaboutusfooterlist,
+#ftmoffoterbuttonleft,
+.propfirmsb,
+#teamsuccessbuttonwhite,
+#teamsuccessbuttonblue,
+#firstpageleftbtnsl,
+#firstpageleftbtnsr,
+#aboutus li,
+#howitworks li,
+#tradingnav li,
+#language li,
+#language,
+.navli,
+#aboutus,
+#howitworks,
+#tradingnav,
+.arrow,
+#navsearchlogo{
+    transition-duration: var(--duration);
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+@media(max-width:1400px){
+    #tradingobjectivescontainer{
+        max-width: 1116px;
+        padding-top: 75px ;
+        padding-bottom: 75px;
+        border-top: 1px solid black;
+    }
+
+    /* Key Highlighsts Section */
+    #keyhighlightscontainer{
+
+        width: 1116px;
+    }
+    /* Key Highlighsts Section */
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1380px){
+    #evaluationsection{
+        width: 1116px;
+        height: 500px;
+        gap: 50px;
+    }
+    #leftevaluationdiv{
+        gap: 50px;
+    }
+   
+    #evaluatebar{
+        transform: translateX(190px);
+    }
+  
+    .evaluationcontentdivs{
+        border-radius: 20px;
+        padding: 30px 20px;
+        padding-bottom: 50px;
+        height: 320px!important;
+        background-color: #fff;
+    }
+
+/*Payout  Section*/
+
+    #payoutright{
+        width:446px;
+    }
+    #payoutcontainer{
+        width: 1116px;
+    }
+
+    
+    /*Payout  Section*/
+
+    /*Platform  Section*/
+    #tradingplatformcontainer{
+       width: 1116px;
+    }
+    #platformleft{
+        width: 446px;
+    }
+    #platformleftdiv img{
+        width: 180px;
+
+    }
+
+
+     /*Platform  Section*/
+
+     
+/*FTMO Props  Section*/
+
+
+    #ftmopropcontainer{
+        width: 1116px;
+    }
+
+    /*FTMO Props  Section*/
+    /* Propfirm  Section*/
+
+#propfirmcontainer{
+    width: 1116px;
+}
+.propfirmscarousel{
+    width: 1116px;
+    gap:0px;
+}
+.propfirmimgcontainer{
+    width: 560px;
+    margin-right: 30px;
+}
+.propfirmshpb{
+    width:430px ;
+    gap: 20px;
+}
+/* Propfirm  Section*/
+
+/* Trading Industry  Section*/
+
+#tradingindustrycontainer{
+    width: 1116px;
+}
+.tradingindustrygriddivs{
+width: 334px;
+
+
+}
+
+
+/* Trading Industry  Section*/
+
+/* FTMO Last Section*/
+
+
+#ftmolastcontainer{
+ 
+    width: 1116px;
+    
+}
+#lastmaincarouselftmo{
+    width: 780px;
+
+}
+
+
+.carouselcontentftmolast{
+    width: 260.75px;
+
+}
+
+
+
+/* FTMO Last Section*/
+
+
+/* FTMO Footer Section*/
+
+
+
+#ftmofootercontainer{
+    width: 1116px;
+   
+}
+
+
+/* FTMO Footer Section*/
+
+/* FTMO Footer Last Section*/
+
+
+#ftmolastfootercontainer{   
+    width: auto;
+
+}
+
+#ftmofooterlastlists{
+    width: 1116px;
+}
+
+/* FTMO Footer Last Section*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1350px){
+    #containright{
+        max-width: 580px;
+        min-width: min(500px,580px);
+    }
+  /* sECOND pAGE */
+  #secondcontainer{
+    display: flex;
+    gap: 40px;
+    width: 1320px;
+    height: 540px;
+    padding: 75px 0;
+    justify-content: center;
+}
+#secondright{
+    width: 446.39px;
+    height: 100%;
+}
+#secondleft{
+    display: flex;
+    gap: 10px;
+    width: 560px;
+    height: 390px;
+}
+
+  /* sECOND pAGE */
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1300px){
+    /* Navbar CSS  */
+    main{
+        height: 170px;
+        display: block;
+    }
+    #navbar{
+        display: block;
+        margin-bottom: 5%;
+    }
+    /* Navbar CSS  */
+    /* home page container */
+    #firstpageleft{
+        height: 710px;
+        gap: 38px;
+    }
+    #firstpagecontainer{
+        height: 750px;
+    }
+    #containright{
+        height: 100%;
+        max-width: 500px;
+        min-width: min(500px,460px);
+    }
+    #firstpagelefth{
+        top: 5px;
+    } 
+  /* Home Page Carousel */
+  
+    #carouselfirst{gap: 40px;}
+    #videodiv{
+        top:150px;
+    }
+
+    /* Home Page Carousel */
+    
+}
+
+
+
+
+
+
+@media(max-width:1196px){
+    /* sECOND pAGE */
+ #secondcontainer{
+   display: flex;
+   gap: 40px;
+   width: 936px;
+   height: 538px;
+   padding: 75px 0;
+   justify-content: center;
+}
+#secondright{
+   width: 453px;
+   height: 100%;
+}
+#secondleft{
+   display: flex;
+   gap: 4px;
+   width: 453px;
+   height: 100%;
+   align-items: center;
+}
+.secondleftimg img{
+   width: 145px;
+   height: 315px;
+   align-self: center;
+}
+
+ /* sECOND pAGE */
+
+  /* Evaluation Process */
+
+  #evaluationsection{
+    width: 936px;
+    height: 500px;
+    gap: 50px;
+}
+#leftevaluationdiv{
+    gap: 50px;
+}
+
+#evaluatebar{
+    transform: translateX(120px);
+}
+
+.evaluationcontentdivs{
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    height: 364px!important;
+    background-color: #fff;
+}
+
+   /* Evaluation Process */
+
+    /* Trading Objectives Section */
+#tradingobjectivessection{
+    margin-left: auto;
+    margin-right: auto;
+}
+    #tradingobjectivescontainer{
+        max-width: 936px;
+    }
+    #balanceulbuttondiv{
+        display: block;
+    }
+    #balancecomparebutton{
+        height: 45px;
+        margin: 30px 0px 0px;
+    }
+    
+    /* Trading Objectives Section */
+
+/* Table Container */
+    #tablecontainer{
+        width: 900px;
+}
+
+/* Table Container */
+    /*Compare Table Section */
+   
+#comparetablecontainer{
+    margin-left: 25px ;
+    margin-right: 25px ;
+    overflow: scroll;
+}
+    /*Compare Table Section */
+     /* Key Highlighsts Section */
+     #keyhighlightscontainer{
+        width: 1116px;
+    }
+    /* Key Highlighsts Section */
+
+    /* Key Highlighsts Section */
+    #keyhighlightscontainer{
+        width: 936px;
+    }
+    /* Key Highlighsts Section */
+
+    /*Payout  Section*/
+
+    #payoutright{
+        width:453px;
+    }
+    #payoutcontainer{
+        width: 936px;
+    }
+    #payoutleft{
+        width: 453px;
+        display: grid;
+        place-content: center;
+    }
+    #payoutleft img{
+        width:100%;
+        height: 318px;
+    }
+    
+    /*Payout  Section*/
+
+    
+     /*Platform  Section*/
+     #tradingplatformcontainer{
+        width: 936px;
+     }
+     #platformleft{
+         width: 453px;
+     }
+     #platformright{
+        width: 453px;
+     }
+     #platformleftdiv img{
+         width: 170px;
+ 
+     }
+ 
+ 
+      /*Platform  Section*/
+
+      /*FTMO Props  Section*/
+
+
+    #ftmopropcontainer{
+        width: 936px;
+    }
+
+    /*FTMO Props  Section*/
+
+      /* Propfirm  Section*/
+
+#propfirmcontainer{
+    width: 936px;
+}
+.propfirmscarousel{
+    width: auto;
+}
+
+.propfirmimgcontainer{
+    width: 500px;
+}
+
+
+.propfirmshpb{
+    width: 400px;
+}
+/* Propfirm  Section*/
+
+/* Trading Industry  Section*/
+
+#tradingindustrycontainer{
+    width: 936px;
+}
+.tradingindustrygriddivs{
+width: 280px;
+
+
+}
+
+
+/* Trading Industry  Section*/
+
+/* FTMO Last Section*/
+#ftmolastcontainer{
+ 
+    width: 936px;
+    
+}
+
+#lastmaincarouselftmo{
+    width: 650px;
+
+}
+
+
+.carouselcontentftmolast{
+    width: 340.75px;
+    padding-left: 30px;
+
+}
+
+
+
+/* FTMO Last Section*/
+
+
+/* FTMO Footer Section*/
+
+
+
+#ftmofootercontainer{
+    width: 936px;
+   
+}
+
+
+/* FTMO Footer Section*/
+
+
+
+/* FTMO Footer Last Section*/
+
+#ftmofooterlastlists{
+    width: 936px;
+}
+
+/* FTMO Footer Last Section*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1060px){
+    /* Navbar CSS  */
+    #navbar{
+        display: none;
+        transition-property: display;
+    }
+    #hamburger{
+        display: block;
+        visibility: visible;
+        z-index: 999;
+    }
+    .navul li{
+        font-size: 1.1rem;
+    }
+   .navul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top:10%;
+    width: 350px;
+    height: auto;
+    padding-top:120px ;
+    background-color: black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 3rem;
+    gap:25px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 0.1fr;
+        height:auto;
+    }
+    #navftmologo{
+        justify-self: flex-start;
+    }
+    .hamarrow{
+        display: flex;
+        width: 70%;
+        justify-content: flex-end;
+        justify-content: space-between;
+        
+    }
+    #aboutspan{
+        justify-self: flex-start;
+    }
+    #flagsflex{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .arrow{
+        align-self: center;
+        width: 18px;
+        height: 18px;
+        transform:scale(1) rotate(270deg);
+        opacity: .6;
+        transition-property: transform,opacity;
+    
+    }
+
+    .navli:hover .arrow,.arrow:hover{
+        transform: scale(1.2)rotate(0deg);
+        opacity: 1;
+    }
+    
+   
+    .navul li {
+        order: 1; 
+      }
+      
+    .navul li:last-child {
+        order: -1; 
+      }
+      .navul li:nth-child(7) {
+        order:6;
+      }
+
+    #client{
+        color:white;
+        text-align: center;
+        width: 80%;
+        background-color: #0781fe;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        transition-property: background-color;
+        margin-bottom: 100px;
+    }
+    #client:hover{
+        background-color: black;
+    }
+    
+
+
+
+   #aboutus,
+    #tradingnav,
+    #howitworks,
+    #language{
+        list-style: none;
+        visibility: visible;
+        display: none;
+        flex-direction: column;
+        gap:10px;
+        background-color: transparent;
+        transform: translateX(0);
+        position: relative;
+        margin: 0%;
+        padding: 0;
+        left: 0;
+        padding-top: 15px;
+    }
+
+    #mobflag,
+    #mobaboutus,
+    #mobtrading,
+    #mobhowitworks{
+        display: flex;
+        flex-direction: column;
+    }
+    #aboutusarrow,
+    #tradingarrow,
+    #howitworksarrow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navul li:nth-child(5):hover #aboutus,
+    .navul li:nth-child(8):hover #language,
+    .navul li:nth-child(4):hover #tradingnav,
+    .navul li:nth-child(1):hover #howitworks{
+        display: flex;
+        flex-direction: column;
+}
+
+
+    #searchlogomain{
+    display: flex;
+    flex-direction: row;
+    }
+    
+
+    #searchimg{
+    display: none;
+    }
+    #searchholder{
+    width: 200px;
+    display: block;
+    }
+    #searchtext{
+    width: 100px;
+    padding: 0;
+    padding: 0;
+    padding-top:0 ;
+    transform: translateX(0);
+    margin-left: 35px;
+    display: block;
+}
+
+#firstpagecontainer{
+        height: 600px;
+    }
+    #firstpageleft{
+        padding-top: 15px;
+        height: 600px;
+        gap: 30px;
+    }
+    #firstpagelefth{
+        font-size: 30px;
+    }
+    #firstpageleftsh{
+        font-size: 70px;
+        line-height: 70px;
+        padding-top: 0px;
+    }
+    #firstpageleftp{
+    font-size: 16px;
+    line-height: 24px;
+    }
+
+    /* Navbar CSS  */
+
+    /* Home Page Carousel */
+    .carouselfirsth{
+        font-size: 40px;
+    }
+    .carouselfirstp{
+        font-size: 13px;
+    }
+
+    #carouselfirst{
+        gap: 10px;}
+    .carouselcontainers{
+
+        max-width: auto;
+        min-width: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #videodiv{
+        top: 100px;
+    }
+
+    /* Home Page Carousel */
+
+    
+    #client,
+    .arrow{
+        transition-duration: var(--duration);
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
+
+@media(max-width:1006px){
+    /*Compare Table Section */
+   
+#comparetablecontainer{
+    margin-left: 25px ;
+    margin-right: 25px ;
+    overflow: scroll;
+}
+    /*Compare Table Section */
+}
+
+
+
+
+
+
+
+
+@media(max-width:995px){
+
+      /* Evaluation Process */
+
+  #evaluationsection{
+    display: flex;
+    flex-direction: column;
+    width: 696px;
+    height: auto;
+    gap: 30px;
+}
+#leftevaluationdiv{
+    gap: 30px;
+}
+#rightevaluationp,
+#evaluatebarp,
+#evaluatebar{
+    display: none;
+}
+
+.evaluationcontentdivs{
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    height: auto!important;
+    background-color: #fff;
+}
+.evaluationboxheadingss::after{
+    content: "This is where we Evaluate your trading skills";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #0781fe;
+    line-height: 20px;
+}
+.evaluationboxheadingssnew::after{
+    content:"Earn Real Money";
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color:#00c7b4;
+    text-decoration:underline;
+ text-decoration-style: dotted;
+ text-decoration-color :black ;
+ text-decoration-line: underline;
+}
+/* Evaluation Process */
+
+/* Trading Objectives Section */
+
+#tradingobjectivescontainer{
+    max-width: 696px;
+}
+
+/* Trading Objectives Section */
+
+/* Table Section */
+#tablecontainer{
+    width: 696px;
+}
+
+
+/* Table Section */
+
+ /* Key Highlighsts Section */
+ #keyhighlightscontainer{
+    width: 696px;
+}
+/* Key Highlighsts Section */
+
+/* Tea, Success  Section */
+#teamsuccesscontainer{
+    background-image: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#teamsuccess{
+    height: 100%;
+    width: 696px;
+    padding:80px 40px;
+    border: 2px dashed #0781fe;
+    border-radius: 10px;
+}
+.teamsuccessbuttonss{
+    padding: 12px 70px;
+}
+/* Team Success  Section */
+
+ /*Payout  Section*/
+
+ #payoutright{
+    width:333px;
+}
+#payoutcontainer{
+    width: 696px;
+}
+#payoutleft{
+    width: 333px;
+}
+#payoutleft img{
+    height: 234px;
+}
+/*Payout  Section*/
+
+  /*Platform  Section*/
+  #tradingplatformcontainer{
+    width: 696px;
+ }
+ #platformleft{
+     width: 333px;
+ }
+ #platformright{
+    width: 333px;
+ }
+ #platformright img{
+    width: 333px;
+    height: 274px;
+ }
+ #platformleftdiv img{
+     width: 135px;
+
+ }
+
+
+  /*Platform  Section*/
+  #ftmopropcontainer{
+    width: 696px;
+}
+#ftmoproplist{
+    gap: 50px;
+}
+
+#ftmoproplist li{
+    width: auto;
+    
+}
+#ftmoproplist li p{
+    font-size: 14px;
+} 
+
+/*FTMO Props  Section*/
+
+   /* Propfirm  Section*/
+
+   #propfirmcontainer{
+    width: 696px;
+ 
+}
+
+
+.propfirmimgcontainer{
+    display: flex;
+    align-items: center;
+    width: 396px;
+    margin-right: 20px;
+}
+
+
+.propfirmshpb{
+    width: 300px;
+    gap: 5px;
+}
+/* Propfirm  Section*/
+
+
+
+/* Trading Industry  Section*/
+
+#tradingindustrycontainer{
+    width: 696px;
+}
+.tradingindustrygriddivs{
+width: 208px;
+
+
+}
+
+
+/* Trading Industry  Section*/
+
+
+/* FTMO Last Section*/
+/*
+#ftmolastcontainer{
+ 
+    width: 936px;
+    
+}
+
+*/
+/* FTMO Last Section*/
+
+
+/* FTMO Last Section*/
+#ftmolastcontainer{
+ 
+    width: 696px;
+    
+}
+
+
+#lastmaincarouselftmo{
+    width: 400px;
+
+}
+
+
+.carouselcontentftmolast{
+    width: 380px;
+    padding-left: 50px;
+}
+
+
+
+/* FTMO Last Section*/
+
+/* FTMO Footer Section*/
+
+
+
+#ftmofootercontainer{
+    width: 696px;
+   
+}
+
+
+/* FTMO Footer Section*/
+
+/* FTMO Footer Last Section*/
+
+#ftmofooterlastlists{
+    width: 696px;
+}
+#socialmediafooter img{
+    width: 19px;
+    height: 20px;
+
+}
+
+/* FTMO Footer Last Section*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:980px){
+    #firstpagecontainer{
+        padding-left:  30px; 
+        padding-right: 30px;
+    }
+    #containright{
+        
+        max-width: 450px;
+        min-width: min(354px,450px);
+    }
+    #firstpageleft{
+       
+        max-width: 325px;
+        min-width: min(450px,355px);
+    }
+
+
+
+
+    /* Second Page*/
+    #secondcontainer{
+        display: flex;
+        gap: 40px;
+        width: 696px;
+        height: 658px;
+        padding: 75px 0;
+        justify-content: center;
+    }
+    #secondright{
+        width: 333px;
+        height: 100%;
+    }
+    #secondleft{
+        display: flex;
+        gap: 2.5px;
+        width: 333px;
+        height: 100%;
+        align-items: center;
+    }
+    .secondleftimg img{
+        width: 100px;
+        height: 231px;
+        align-self: center;
+    }
+    /* Second Page*/
+  
+}
+
+
+
+
+
+
+@media (max-width: 767.98px){
+   /* HOME PAGE */
+    #firstpageright{
+        display: none;
+        visibility: none;
+    }
+    #firstpagecontainer{
+        padding: 50px;
+        height: 700px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: block;
+        gap: 50px;
+    }
+    #firstpageleft{
+        max-width:100%;
+        height: 100%;
+        gap: 50px;
+    }
+    #firstpageleftbtns{
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    }
+    #firstpageleftbtnsr,
+    #firstpageleftbtnsl{
+    padding: 12px;
+    border-radius:8px ;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight:bold;
+}
+    /* HOME PAGE Carousel*/
+    #homecarousel{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #carouselfirst{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+       flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #homecarouselnav{
+        display: flex;
+        gap: 10px;
+        transform: translateY(60px);
+    }
+    .homecarouselarrowright,
+    .homecarouselarrowleft{
+        width: 25px;
+        display: block;
+        opacity: 0.5;
+        transition-property:opacity ;
+        cursor: pointer;
+    }
+    .homecarouselarrowright:hover,
+    .homecarouselarrowleft:hover{
+        opacity: 1;
+    }
+    .homecarouselarrowright{
+        transform: rotate(270deg);
+        float: right;
+    }
+    .homecarouselarrowleft{
+        transform: rotate(90deg);
+    }
+    .carouselcontainers{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        max-width: 670px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        transition: transform 0.40s ease-in-out;
+    }
+    .carouselfirsth{
+        font-size: 40px;
+    }
+    .carouselfirstp{
+        font-size: clamp(10px, 2.5vw, 15px);
+        font-weight: 700;
+    }
+
+    /* Home Video*/
+#videodiv{
+    box-sizing: border-box;
+    display: block;
+    top: 0;
+    position: relative;
+    height: calc(max(100px, min(504px, 60vw)));
+    width: 100%;
+    padding: calc(12% - 20px); 
+    background-color: white;
+}
+
+#videofig{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+      
+}
+#videofirst{
+    width: 100%;
+    height: 90%;
+}
+#videocrosshome{
+    display: none;
+}
+
+#figvideo{
+    display: block;
+}
+
+/* Home Video*/
+
+  /* Second Page*/
+  #secondcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding:35px 0;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom:20px ;
+}
+#secondright{
+    width: 100%;
+    height: auto;
+    padding-left:6vw;
+    padding-right: 6vw;
+}
+#secondleft{
+    order:2;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+}
+
+
+.secondleftimg img{
+    width: 100%;
+    height:max(137px,52.5vw);
+}
+
+
+#secondright h1{
+    font-size: 26px!important;
+    line-height: 35px!important;
+    padding-bottom: 20px;
+    color: #262729;
+    width: 100%;
+}
+#secondrightp1,
+#secondrightp2{
+    font-size: 12.25px;
+    line-height: 22px;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+
+
+/* Second Page*/
+
+
+/* Evaluation Section*/
+#evaluationdiv{
+    width: 100% !important;
+    height: auto !important;
+}
+#evaluationsection{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: auto !important;
+    gap: 10px;
+    padding-left: 15px;
+   padding-right: 15px;
+   margin: 0px;
+    align-items: center;
+}
+#leftevaluation{
+   width: 100% !important;
+    height: auto !important;
+}
+#leftevaluationdiv{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: auto;
+}
+#rightevaluation{
+    width: 100%;
+    height: auto !important;
+}
+#evaluationmainheading{
+    font-size: 30px!important;
+    margin-bottom: 15px;
+}
+.evaluationcontentdivs{
+    height: auto !important;
+    width: 100% !important;
+}
+.evaluationboxp{
+    max-height: 100% !important;
+}
+
+/* Evaluation Section*/
+
+/* Trading Objectives Section */
+
+#tradingobjectivescontainer{
+    max-width: 635px;
+    margin-left:20px ;
+    margin-right: 20px;
+}
+#balancecomparebutton{
+    width: 100% !important;
+}
+
+/* Trading Objectives Section */
+
+
+/* Table Section */
+#tablecontainer{
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+/* Table Section */
+
+
+
+/*Key Highlights Section*/
+
+#keyhighlightssection{
+    width:100%;
+    
+}
+#keyhighlightscontainer{
+    height: auto;
+    width: auto;
+}
+#keyhighlightsmainh1{
+    border-bottom: none;
+    padding-bottom: 16px;
+    margin-left: 25px;
+}
+
+#keyhighlights{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+    padding-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.keyhighlightsdivs p{
+    font-size: 12.5px;
+}
+
+
+/*Key Highlights Section*/    
+
+/* Team Success  Section */
+#teamsuccesscontainer{
+    width: auto;
+}
+#teamsuccess{
+    height: 100%;
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 80px 40px;
+}
+#teamsuccess p{
+    padding: 0px 20px;
+}
+.teamsuccessbuttonss{
+    padding: 12px 70px;
+    width: fit-content;
+    
+}
+#teamsuccessbutton{
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+/* Team Success  Section */
+
+
+
+ /*Payout  Section*/
+
+
+#payoutcontainer{
+    flex-direction: column;
+    gap: 30px;
+    max-width: 637px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#payoutright{
+    width:100%;
+    
+}
+#payoutleft{
+    width: 100%;
+    order:1;
+}
+#payoutleft img{
+    width: 100%;
+    height: 50vw;
+}
+/*Payout  Section*/
+
+
+  /*Platform  Section*/
+#tradingplatformsections{
+    padding: 0px 0px;
+}
+
+  #tradingplatformcontainer{
+    width: auto;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 40px;
+    padding:10px 0px;
+    padding-bottom: 30px;
+ }
+ #platformleft{
+     width: 100%;
+ }
+ #platformleft h1{
+    font-size: 26px;
+
+ }
+ #platformright{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+ }
+ #platformright img{
+    width: 100%;
+    height: 60vw;
+ }
+ #platformleftdiv img{
+     width:38vw;
+     flex-wrap: wrap;
+ }
+ #platformleftdiv{
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+  /*Platform  Section*/
+
+
+
+
+  /*ftmo prop  Section*/
+
+  #ftmopropcontainer{
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/*ftmo prop  Section*/
+
+#propfirmcontainer{
+    width: auto;
+}
+.propfirmh{
+    display: none;
+}
+.propfirmscarousel{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.propfirmimgcontainer{
+    display: flex;
+    align-items: center;
+    width: 560px;
+    margin-right: 0px;
+}
+
+
+.propfirmshpb{
+    align-self: flex-start;
+    width: 518px;
+    gap: 15px;
+}
+/* Propfirm  Section*/
+
+
+/* Trading Industry  Section*/
+
+#tradingindustrycontainer{
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#tradingindustrygrid{
+    gap: 40px;
+    padding-top: 30px;
+}
+.tradingindustrygriddivs{
+    flex-direction: column;
+width: 100%;
+background-color: white;
+border-radius: 15px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+}
+.tradingindustrygriddivs p{
+    font-size: 14px;
+}
+.tradingindustrygridparts h1{
+    font-size: 16px;
+}
+/* Trading Industry  Section*/
+
+
+
+
+/* FTMO Last Section*/
+#ftmolastcontainer{
+ 
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+#ftmolastflex{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+}
+
+#lastoneimgp{
+    justify-content: center;
+}
+#ftmolastleft{
+    text-align: center;
+    width: auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c6c6c6;
+}
+
+#ftmolastcarousel{
+    width: auto;
+    margin-left: 0px;
+}
+
+#lastmaincarouselftmo{
+    width: auto;
+    height: auto;
+    gap: 0px;
+    overflow: hidden;
+}
+
+
+.carouselcontentftmolast{
+    width:auto;
+    padding-left:0px;
+    height: auto;
+    text-align: center;
+}
+
+.lastftmoverified{
+    display: none;
+}
+
+#lastftomradiobuttons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px ;
+    
+}
+.radiolastftmocheck{
+    cursor: pointer;
+}
+.imgverified{
+    width: 55px;
+}
+.carouselstarsftmolast{
+    width: 55px;
+
+}
+
+.newarrowftmolastdiv{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.oldarrowftmolast{
+    display: none;
+}
+
+
+.newarrowftmolast{
+    display: flex;
+    cursor: pointer;
+}
+#ftmolastrightnewarrow{
+    justify-self: end;
+    transform: rotate(180deg);
+}
+
+/* FTMO Last Section*/
+
+
+
+
+
+/* FTMO Footer Section*/
+
+
+
+#ftmofootercontainer{
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+   
+}
+
+
+/* FTMO Footer Section*/
+
+
+
+/* FTMO Footer Last Section*/
+
+
+#ftmolastfootercontainer{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: auto;
+    
+}
+
+#ftmofooterlastlists{
+    grid-auto-flow: row;
+    grid-template-columns: 80vw;
+    width: 100%;
+    gap:50px;
+}
+
+#socialmediafooter img{
+    width: 35px;
+    height: 36px;
+}
+
+/* FTMO Footer Last Section*/
+
+
+
+
+    .homecarouselarrowright,
+    .homecarouselarrowleft{
+        transition-duration: var(--duration);
+        transition-timing-function: ease-in-out;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 624px){
+    /* Table Section */
+    .tablerowleft{
+        width: 121.23px;
+    }
+
+    /* Table Section */
+    /*ftmo prop  Section*/
+
+
+
+#propfirmcontainer{
+    width: auto;
+    height: auto;
+}
+.propfirmscarousel{
+    height: auto;
+}
+
+.propfirmimg{
+    width: 100%;
+    height: 100%;
+}
+.propfirmimgcontainer{
+    width: 100%;
+    padding-top: 30px;
+    height:max(180px, 80vw);
+}
+
+
+.propfirmshpb{
+    width: auto;
+    height: auto;
+    gap: 15px;
+}
+.propfirmp{
+    font-size: 16px;
+}
+.propfirmsp{
+    font-size: 13px;
+}
+.propfirmsb{
+    letter-spacing: 0px;
+    font-size: 16px;
+}
+/* Propfirm  Section*/
+
+/* FTMO Footer Section*/
+
+
+
+#footerbuttonsdiv{
+    grid-auto-flow: row;
+
+}
+
+.ftmofooterbutton{
+    font-size: 16px;
+}
+
+/* FTMO Footer Section*/
+
+
+}
+
+
+
+
+@media (max-width: 575.98px){
+    #firstpagecontainer{
+        height: auto;
+    }
+    #firstpageleft{
+        gap: 40px;
+        max-width: 100% ;
+        min-width: 300px;
+    }
+    #firstpageleftbtns{
+        flex-direction: column;
+    }
+    #firstpageleftsh{
+        font-size: 65px;
+        line-height: 65px;
+        padding-top: 0px;
+    }
+    #firstpageleftp{
+    font-size: 1rem;
+    line-height: 24px;
+    }
+
+    /* Team Success  Section */
+#teamsuccesscontainer{
+    width: auto;
+}
+#teamsuccess{
+    height: 100%;
+    max-width: 483px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+}
+#teamsuccess p{
+    line-height: 22px;
+    margin: 30px 0;
+    padding-top: 10px;
+    padding: 0px;
+    color: #555b6c;
+    font-size: .875rem;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+}
+.teamsuccessbuttonss{
+    padding: 12px 70px;
+}
+#teamsuccessbutton{
+    width: 100%;
+    gap: 5px;
+}
+.teamsuccessbuttonss{
+    width: 100%;
+}
+
+#teamsuccess h1{
+margin: 20px 0px;
+font-size: 22px;
+letter-spacing: .05em;
+text-align: center;
+text-transform: none;
+line-height: 30px;
+    font-weight: 600;
+}
+
+
+/* Team Success  Section */
+
+
+
+  /*ftmo prop  Section*/
+
+#ftmopropupperh1{
+    font-size: 26px;
+}
+#ftmopropupperp{
+    font-size: 16px;
+}
+
+#ftmoproplist li p{
+    font-size: 12px;
+
+}
+#ftmoproplist{
+    gap: 25px;
+}
+#ftmoproplist li{
+    width: 130px;
+}
+
+/*ftmo prop  Section*/
+
+/* FTMO Footer Section*/
+
+.footerp{
+    font-size: 21px;
+}
+
+#footerbuttonsdiv{
+    width: 100%;
+}
+
+#ftmoffoterbuttonleft{
+    width: 100%;
+    margin: 5px auto;
+}
+#ftmoffoterbuttonright{
+    width: 100%;
+    margin: 5px auto;
+}
+.ftmofooterbutton{
+    font-size: 14px;
+}
+
+/* FTMO Footer Section*/
+
+
+
+}
+
+
+
+@media (max-width: 545px){
+/* Table Section */
+.tablejsarrows{
+    display: block;
+    position: absolute;
+    transform:translateY(70px) ;
+}
+#arrowtableleft:hover,
+#arrowtableright:hover{
+ cursor: pointer;
+}
+#arrowtableright{
+    right: 0;
+    transform: rotate(180deg)translateX(30px)translateY(-69px);
+}
+
+#tablerowonedivstwo,
+#tablerowonedivsthree{
+    display: none;
+}
+h2.coltwo{
+    display: none;
+}
+h2.colthree{
+    display: none;
+}
+.tablerowleft{
+    width: 100%;
+}
+.tablerowleft p{
+    text-align: left;
+    width: auto;
+}
+.tablerowsclass{
+    grid-template-columns: 1fr 1fr !important;
+}
+/* Table Section */
+
+/* Team Success  Section */
+
+#teamsuccess{
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Team Success  Section */
+
+
+/*Payout  Section*/
+
+#payoutright h1{
+    font-size: 26px;
+}
+#payoutright p{
+    font-size: 12px;
+}
+
+/*Payout  Section*/
+
+}
+
+@media (max-width: 525px){
+
+  /* FTMO Footer Last Section*/
+  #ftmofooterlaststore{
+    gap: 8px;
+  }
+
+    #ftmofooterlaststore img{
+        width: 30vw;
+        height: 18vw;
+        min-width: 69px;
+    min-height: 41px;
+    }
+    
+    
+    
+    
+    
+    /* FTMO Footer Last Section*/
+    
+}
+
+
+@media (max-width: 486px){
+    /*Trading Objectives Section*/
+    
+    #balancelist li,
+    #currencylist li{
+        width: calc(50% - 10px);
+    }
+
+    /*Trading Objectives Section*/
+}
+
+
+
+
+
+
+
+
+@media (max-width: 420px){
+    #firstpagecontainer{
+        height: auto;
+        width: 100%;
+        padding-top: 15px;
+    }
+    #firstpageleft{
+
+        gap: 15px;
+        max-width:100%;
+        min-width: 180px ;
+    }
+   #firstpageleftsh{
+    font-size: 50px;
+   }
+   .navul{
+    width: 280px;
+   }
+   #aboutus,
+#tradingnav,
+#howitworks,
+#language{
+    width: 200px;
+}
+#searchholder{
+    width: 150%;
+}
+#navftmologo{
+    width: 210px;
+    height: 95px;
+}
+/* Platform section */
+#platformleftdiv img{
+    width:35vw;
+}
+/* Platform section */
+}
+
+
+
+
+@media(max-width:310px){
+
+    /* Platform section */
+#platformleftdiv img{
+width:32vw;
+}
+/* Platform section */
+/* Propfirm  Section*/
+.propfirmsb{
+    letter-spacing: 0px;
+    font-size: 12px;
+}
+/* Propfirm  Section*/
+}
+
+@media(max-width:310px){
+#socialmediafooter img{
+    width: 10vw;
+    height: 10vw;
+}
+
+/* FTMO Footer Last Section*/
+}
+
+
+
+
+
+@media(max-width:283px){
+    #firstpageleftsh{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .samestar{
+        width: 10vw;
+    }
+    #firstpageleft{
+        min-width: 100px;
+    }
+    #firstpagediv{
+        background-color: black;
+    }
+}
